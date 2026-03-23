@@ -1,218 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - DazzTech Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .contact-page {
-            padding: 120px 5% 5rem;
-            min-height: 100vh;
-            background-color: var(--light-text);
-        }
-
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-        }
-
-        .contact-info {
-            padding: 2rem;
-        }
-
-        .contact-info h2 {
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-        }
-
-        .contact-details {
-            margin-bottom: 3rem;
-        }
-
-        .contact-details p {
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .contact-details i {
-            color: var(--primary-color);
-            font-size: 1.25rem;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: var(--border-radius);
-            font-size: 1rem;
-        }
-
-        .form-group textarea {
-            height: 150px;
-            resize: vertical;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        .form-group input.error,
-        .form-group textarea.error {
-            border-color: #ef4444;
-        }
-
-        .submit-button {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: var(--border-radius);
-            font-size: 1rem;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .submit-button:hover {
-            background-color: var(--secondary-color);
-            transform: translateY(-2px);
-        }
-
-        @media (max-width: 768px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | DazzTech Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">DazzTech Solutions</a>
-        </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="index.html#services">Services</a>
-            <a href="index.html#blog">Blog</a>
-            <a href="contact.html" class="active">Contact</a>
-            <a href="schedule.html" class="cta-button">Schedule a Call</a>
-        </div>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
 
-    <!-- Contact Page Content -->
-    <main class="contact-page">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <div class="contact-details">
-                    <p>
-                        <i class="fas fa-map-marker-alt"></i>
-                       85/1 Kharda Kulinpara Kolkata - 700116
-                    </p>
-                    <p>
-                        <i class="fas fa-phone"></i>
-                        +91 8967539352
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:admin@dazztechsolutions.com">admin@dazztechsolutions.com</a>
-                    </p>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-            <div class="contact-form">
-                <h2>Send us a Message</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </main>
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">DazzTech Solutions</div>
+    <a href="index.html" class="nav-back">← Home</a>
+  </div>
+</nav>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <a href="about.html">About Us</a>
-                <a href="index.html#services">Services</a>
-                <a href="index.html#blog">Blog</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="footer-section">
-                <h4>Services</h4>
-                <a href="#">Web Development</a>
-                <a href="#">Mobile Apps</a>
-                <a href="#">Cybersecurity</a>
-                <a href="#">AI Solutions</a>
-            </div>
-            <div class="footer-section">
-                <h4>Connect With Us</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Tech Solutions. All rights reserved.</p>
-        </div>
-    </footer>
+<section class="form-section hero">
+<canvas id="heroCanvas"></canvas>
+  <div class="form-card container hero-content">
+    <h1>Contact Us</h1>
 
-    <script src="script.js"></script>
+    <form action="https://formspree.io/f/xaqpgzoj" method="POST" class="contact-form">
+      <input type="hidden" name="form-type" value="Contact Form">
+
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="input-group">
+        <textarea name="message" placeholder="Your message..." required></textarea>
+      </div>
+
+      <button class="cta-button glow">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>📞 +91 8967539352</p>
+      <p>📧 admin@dazztechsolutions.com</p>
+    </div>
+  </div>
+</section>
+
 </body>
-</html> 
+<script src="script.js"></script>
+</html>
